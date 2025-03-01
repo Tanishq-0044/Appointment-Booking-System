@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background for the app */
+    color: #333;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+h2 {
+    font-size: 24px;
+    color: #c58940; /* Header color */
+}
+
+/* Login and Signup Page Styles */
+.signup, .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #faeab1; /* Background color for forms */
+    overflow: hidden; /* Prevents overflow */
+}
+
+.signup__form, .login__form {
+    background-color: #ffffff; /* White background for forms */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center; /* Centering text */
+}
+
+.signup__title, .login__title {
+    margin-bottom: 20px;
+    color: #c58940; /* Title color */
+}
+
+label {
+    margin: 10px 0 5px;
+    display: block;
+    text-align: left; /* Aligning labels to left */
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Prevents overflow caused by padding */
+}
+
+button {
+    background-color: #c58940;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b07730; /* Darker shade on hover */
+}
+
+.link {
+    color: #c58940; /* Link color */
+    text-decoration: none;
+}
+
+/* Dashboard Page Styles */
+.dashboard__nav {
+    background-color: #c58940;
+    height: 10vh;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Keeps space between items */
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.dashboard__nav h2 {
+    color: #fff;
+    margin-right: auto; /* Pushes the title to the left */
+    margin-left: 20px; /* Moves the title slightly right */
+}
+
+.logout__btn {
+    margin-left: 10px; /* Add a small left margin to move it slightly left */
+    background-color: #f9f9f7; /* Background color for visibility */
+    color: #b06f43; /* Text color */
+    padding: 10px 15px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+}
+
+/* Hover effect for the logout button */
+.logout__btn:hover {
+    background-color: #d3b59f; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Updated Dashboard Main Container */
+.dashboard__main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%; /* Reduced width of the dashboard */
+    margin: 20px auto; /* Centered and added spacing from top */
+    background-color: #ffffff; /* White background for dashboard */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    overflow: hidden; /* Prevents content from overflowing */
+    box-sizing: border-box; /* Prevents overflow due to padding */
+}
+
+.dashboard__heading {
+    margin-bottom: 25px;
+    color: #c58940;
+}
+
+.timezone__wrapper {
+    width: 70%; /* Reduced width of the timezone wrapper */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Ensures padding does not cause overflow */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 80%; /* Reduced form width */
+    box-sizing: border-box; /* Prevents overflow due to padding */
+}
+
+.time__container {
+    display: flex; /* Aligning start and end time side by side */
+    justify-content: space-between; /* Distributing space */
+    width: 100%; /* Ensure it doesn't exceed the container */
+    box-sizing: border-box; /* Prevents overflow due to padding */
+}
+
+.select__wrapper {
+    width: 40%; /* Further reduce the width of select elements */
+}
+
+.saveBtn__container {
+    width: 80%; /* Adjust width to match the reduced form width */
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; /* Added spacing */
+    box-sizing: border-box; /* Prevents overflow due to padding */
+}
+
+.saveBtn__container button {
+    width: 200px;
+    padding: 15px;
+    background-color: #c7a014;
+}
+
+.saveBtn__container button:hover {
+    background-color: #f0e4d0; /* Hover effect for save button */
+}
